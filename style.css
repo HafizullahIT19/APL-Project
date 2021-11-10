@@ -6,26 +6,32 @@
 
 .box1 {
     background-color: rgb(230, 135, 10);
+    order: 1;
 }
 .box2 {
     background-color: rgb(197, 230, 10);
+    order: 0;
 }
 .box3 {
     background-color: rgb(10, 124, 230);
+    order: 0;
 }
 .box4 {
     background-color: rgb(10, 230, 127);
+    order: 0;
 }
 .box5 {
     background-color: rgb(230, 72, 10);
+    order: 0;
 }
 .box6 {
     background-color: rgb(230, 10, 175);
+    order: -1;
 }
 
 .box {
     padding: 20px;
-    width: 20%;
+    width: 13%;
     font-size: 30px;
 }
 

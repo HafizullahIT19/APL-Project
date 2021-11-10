@@ -1,0 +1,42 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+div.orange{
+  background-color: orange;
+}
+div.blue{
+  order: -1;
+  background-color: aqua;
+
+}
+div.green{
+  background-color: forestgreen;
+}
+.container > div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  div.orange {
+    flex-basis: 100%;
+    width: 50%;
+  }
+  div.blue {
+    flex-basis: 50%;
+    width: 50%;
+    order: 0;
+  }
+  div.green {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
