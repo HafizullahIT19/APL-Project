@@ -117,3 +117,17 @@ Items: (children)
 Part 10
 
 Items: (children)
+
+        Align-self 
+        align-self: flex-start;    (default:پیش فرض)    
+                  : flex-end;
+                  : center;
+                  : stretch;       
+                  : space-around;
+                  : space-between;
+
+--------------------------------------------------------------------------------------------
+Part 14
+
+    margin-right: auto;
+    margin-left: auto;
