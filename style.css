@@ -6,15 +6,12 @@
 
 .flex-container{
     background-color: aqua;
-    display: flex;
 
-    /* justify-content: start; */
-    justify-content: flex-end;
 }
 
 .flex-container > div{
     background-color: bisque;
-    /* margin: 20px; */
+    margin: 20px;
     padding: 30px;
     font-size: 20px;
 }
