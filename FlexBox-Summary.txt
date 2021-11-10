@@ -98,3 +98,22 @@ Items: (children)
 Part 9
 
 Items: (children)
+
+    Flex basis = width   
+    flex-basis: auto;  (default:پیش فرض) 
+    flex-basis: % px ...; 
+
+
+    Flex-shrink is the flex-grow reverse.(وارونه)  (children (items) takes this)
+    flex-shrink: 0;  (default:پیش فرض) 
+    flex-shrink: 1;
+
+
+    Flex = flex-grow flex-shrink  flex-basis
+    flex: 0 1 200px;
+
+
+--------------------------------------------------------------------------------------------
+Part 10
+
+Items: (children)
