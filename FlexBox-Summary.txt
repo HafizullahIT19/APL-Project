@@ -10,10 +10,28 @@ Part 1
 --------------------------------------------------------------------------------------------
 Part 2
 
-Flexbox:
-    1- Container 
-    2- Items
+FlexBox:
+    1- Container  (parent)
+    2- Items      (Children)
 
 
 --------------------------------------------------------------------------------------------
 Part 3
+
+Container:
+
+    flex-wrap: nowrap                        (default:پیش فرض and parent takes this)
+             : wrap
+             : wrap-reverse                  (معکوس)
+            
+    flex-direction: row;                      (default:پیش فرض, row: ردیف  and parent takes this)
+                : row-reverse;              (معکوس)
+                : column;                   (column:ستون)
+                : column-reverse;
+
+    flex-flow: Wrapping Direction;
+    flex-flow: wrap row; 
+
+
+--------------------------------------------------------------------------------------------
+Part 4

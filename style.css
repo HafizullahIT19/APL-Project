@@ -6,12 +6,26 @@
 
 .flex-container{
     background-color: aqua;
-    /* display: flex; */
+    display: flex;
+
+
+    /* Flex-Wrap  */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* Flex-Direction */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+
+    flex-flow: wrap row;
 }
 
 .flex-container > div{
     background-color: bisque;
-    margin: 30px;
+    margin: 20px;
     padding: 30px;
     font-size: 20px;
 }
