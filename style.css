@@ -1,17 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.flex-container{
-    background-color: aqua;
-
+.box1 {
+    background-color: rgb(230, 135, 10);
+}
+.box2 {
+    background-color: rgb(197, 230, 10);
+}
+.box3 {
+    background-color: rgb(10, 124, 230);
+}
+.box4 {
+    background-color: rgb(10, 230, 127);
+}
+.box5 {
+    background-color: rgb(230, 72, 10);
+}
+.box6 {
+    background-color: rgb(230, 10, 175);
 }
 
-.flex-container > div{
-    background-color: bisque;
-    margin: 20px;
-    padding: 30px;
-    font-size: 20px;
+.box {
+    padding: 20px;
+    width: 20%;
+    font-size: 30px;
+}
+
+.container {
+    background-color: aqua;
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: center;
 }

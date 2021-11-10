@@ -50,7 +50,7 @@ Part 5
 
 Container:
 
-    work with column        
+    work with column        (تراز کردن موارد)       
     align-items: stretch;      (کش آمدن) (default:پیش فرض) 
                 : flex-start;
                 : flex-end;
@@ -60,3 +60,17 @@ Container:
 
 --------------------------------------------------------------------------------------------
 Part 6
+
+Container:
+
+    work with column        (تراز کردن محتوا)
+    align-content: stretch;      (کش آمدن) (default:پیش فرض) 
+                 : flex-start;
+                 : flex-end;
+                 : center;
+                 : space-around;
+                 : space-between;
+
+
+--------------------------------------------------------------------------------------------
+Part 7
