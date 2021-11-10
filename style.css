@@ -8,24 +8,13 @@
     background-color: aqua;
     display: flex;
 
-
-    /* Flex-Wrap  */
-    /* flex-wrap: nowrap; */
-    /* flex-wrap: wrap; */
-    /* flex-wrap: wrap-reverse; */
-
-    /* Flex-Direction */
-    /* flex-direction: row; */
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column; */
-    /* flex-direction: row-reverse; */
-
-    flex-flow: wrap row;
+    /* justify-content: start; */
+    justify-content: flex-end;
 }
 
 .flex-container > div{
     background-color: bisque;
-    margin: 20px;
+    /* margin: 20px; */
     padding: 30px;
     font-size: 20px;
 }

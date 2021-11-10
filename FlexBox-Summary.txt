@@ -35,3 +35,15 @@ Container:
 
 --------------------------------------------------------------------------------------------
 Part 4
+
+Container:
+
+    Works with Row       
+    justify-content: flex-start;   (default:پیش فرض)
+                   : flex-end;
+                   : space-around;
+                   : space-between;
+                   : space-evenly;
+
+--------------------------------------------------------------------------------------------
+Part 5

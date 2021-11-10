@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-container {
+    color: black;
+    background-color: lightpink;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    border: 1px solid black;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+}
+.group{
+    display: flex;
+
+}
+.login {
+    margin-left: 30px;
+
+}
