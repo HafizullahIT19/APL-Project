@@ -127,3 +127,14 @@ Mixing grid sizes:
 
 --------------------------------------------------------------------------------------------
 Part 7 (44)
+
+Children:
+    grid-area:
+        Shorthand for 'grid-row-start', 'grid-row-start', 'grid-row-end', and 'grid-column-end'.
+        
+        grid-area: grid-row-start / grid-row-start / grid-row-end / grid-column-end
+        grid-area: 2 / 2 / 4 / 5;
+
+
+--------------------------------------------------------------------------------------------
+Part 8 (45)
