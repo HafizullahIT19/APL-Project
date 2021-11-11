@@ -37,3 +37,37 @@ Container:
 
 --------------------------------------------------------------------------------------------
 Part 3 (40)
+
+1- Gap   (column and row)
+2- Line  (column and row)
+
+Container:
+    1- gap: (column and row)
+        Bad:
+            grid-column-gap: 30px;  //is bad
+            grid-row-gap: 0px;      //is bad
+         
+            grid-gap: Row Column; 
+            grid-gap: 40px 80px;   //is bad
+         
+         Good:
+            column-gap: 30px;
+            row-gap: 10px;
+
+            gap: Row Column;
+            gap: 40px 80px;
+
+            gap: 60px;      //Row and Column are 60px
+
+Children:
+    grid Column start and end:
+        grid-column-start: 1;   //Start line 1 in Column
+        grid-column-end: 3;     //End line 3 in Column
+
+    grid Row start and end:
+        grid-row-start: 1;   //Start line 1 in Row
+        grid-row-end: 3;     //End line 3 in Row
+
+
+--------------------------------------------------------------------------------------------
+Part 4 (41)
