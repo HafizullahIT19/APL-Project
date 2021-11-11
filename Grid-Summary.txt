@@ -138,3 +138,19 @@ Children:
 
 --------------------------------------------------------------------------------------------
 Part 8 (45)
+
+Children:
+    1- grid-area: nameItem;
+        grid-area: myItem;    //item take name myItem
+
+Container:
+    2- grid template areas:
+        grid-template-areas: 'myItem myItem .';                      // Row-1: grid-template-column: myItem myItem OtherItem
+        grid-template-areas: 'myItem myItem .' 'myItem myItem .';   // Row-1: grid-template-column: myItem myItem OtherItem and Row-2: grid-template-column: myItem myItem OtherItem
+
+
+OBS grid-template-areas is use more for show headers, footers and ... the website
+
+
+--------------------------------------------------------------------------------------------
+Part 9 (46)
