@@ -9,7 +9,31 @@ Part 1 (38)
 1- Row and column
 2- Line:    Row Lines and Column Lines
 3- Gap:     Row Gaps and Column Gaps
+OBS: look at img
+
 
 --------------------------------------------------------------------------------------------
-Part 1 (39)
+Part 2 (39)
 
+1- Grid Cell
+2- Grid Track   
+3- Grid Area
+4- Grid Gap
+5- Grid Line
+OBS: look at img
+
+Container:
+    display: grid; 
+    display: inline-grid;
+
+    1- grid template columns:   (Creates Columns)
+
+        grid-template-columns: 150px 150px 150px;   (3 columns with 150px)
+        grid-template-columns: auto auto auto;      (3 columns with auto)
+
+        grid-template-columns: repeat(3, auto);     (3 columns with auto)
+        grid-template-columns: repeat(3, 150px);     (3 columns with 150px)
+
+
+--------------------------------------------------------------------------------------------
+Part 3 (40)
