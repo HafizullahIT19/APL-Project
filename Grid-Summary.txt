@@ -1,9 +1,15 @@
 
 Grid Summary 
 
+Gird Help: https://grid.malven.co/
 
 --------------------------------------------------------------------------------------------
-Part 1
+Part 1 (38)
 
+1- Row and column
+2- Line:    Row Lines and Column Lines
+3- Gap:     Row Gaps and Column Gaps
 
+--------------------------------------------------------------------------------------------
+Part 1 (39)
 
