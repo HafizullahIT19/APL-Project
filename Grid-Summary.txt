@@ -174,4 +174,25 @@ for order we take grid-area:(Part 7)
 
 
 --------------------------------------------------------------------------------------------
-Part 12 (49)
+Part 12 (49) End
+
+1- minmax(,);
+    minmax(Minimum,Maximum);
+
+2- auto-fill
+    repeat(3,auto) (Part 2)
+    repeat(auto-fill,minmax(,)) 
+
+3- auto-fit
+    repeat(auto-fit,minmax(,)) 
+
+
+Examples:
+    grid-template-rows: minmax(30px, 70px) minmax(30px, 70px) minmax(30px, 70px);
+    
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+
+
+--------------------------------------------------------------------------------------------
