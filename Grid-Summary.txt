@@ -71,3 +71,20 @@ Children:
 
 --------------------------------------------------------------------------------------------
 Part 4 (41)
+
+Container:
+    1- grid template rows:
+        grid-template-rows: 100px 300px 300px;
+
+    2- justify content:             (Works with Row)
+            justify-content: start;
+                           : end; 
+                           : center; 
+                           : stretch; 
+                           : space-between; 
+                           : space-around; 
+                           : space-evenly;
+
+
+--------------------------------------------------------------------------------------------
+Part 5 (42)
