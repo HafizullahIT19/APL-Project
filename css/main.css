@@ -1,0 +1,20 @@
+body {
+  direction: rtl;
+}
+
+.nav {
+  background-color: aqua;
+}
+
+.banner h1 {
+  color: gray;
+  font-size: 40px;
+  text-align: center;
+}
+
+.footer h3 {
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

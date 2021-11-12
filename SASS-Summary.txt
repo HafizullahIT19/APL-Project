@@ -54,3 +54,21 @@ scss(new version)
 
 --------------------------------------------------------------------------------------------
 Part 3
+
+Variables
+
+Variables are Global or Local
+
+1- Create Variable:
+        $nameVariable: valueVariable;            
+        $color-primary:orange;
+
+2- Use Variable:
+        background-color: $nameVariable;         
+        background-color: $color-primary;
+
+
+--------------------------------------------------------------------------------------------
+Part 4
+
+

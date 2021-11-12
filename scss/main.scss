@@ -1,0 +1,27 @@
+$color-primary: aqua;
+$color-secondary: gray;
+$color-tertiary: rgb(0, 26, 255);
+
+$font-size-lg: 40px;
+$font-size-md: 30px;
+$font-size-sm: 20px;
+
+body{
+    direction: rtl;
+}
+
+.nav{
+    background-color: $color-primary;
+}
+
+.banner h1{
+    color: $color-secondary;
+    font-size: $font-size-lg;
+    text-align: center;
+}
+
+.footer h3{
+    color: $color-secondary;
+    font-size: $font-size-sm;
+    text-align: center;
+}
