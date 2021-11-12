@@ -6,22 +6,78 @@ $font-size-lg: 40px;
 $font-size-md: 30px;
 $font-size-sm: 20px;
 
+// @mixin headingStyle {
+//     color: $color-secondary;
+//     text-align: center;
+// }
+
+// @mixin headingStyle ($font-size) {
+//     color: $color-secondary;
+//     text-align: center;
+//     font-size: $font-size;
+// }
+
+// @mixin headingStyle ($font-size:50px) {
+@mixin headingStyle ($font-size:$font-size-lg) {
+    color: $color-secondary;
+    text-align: center;
+    font-size: $font-size;
+}
+
+
+@mixin transition ($params...){
+    transition: $params;
+}
+
+
+
+
 body{
     direction: rtl;
 }
 
 .nav{
     background-color: $color-primary;
+
+    ul li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: $font-size-sm;
+
+        &:hover{
+            color: $color-tertiary;
+            font-size: $font-size-md;
+        }
+    }
 }
 
+
 .banner h1{
-    color: $color-secondary;
-    font-size: $font-size-lg;
-    text-align: center;
+    // @include headingStyle;
+    // font-size: $font-size-lg;
+
+    // @include headingStyle(100px);
+    // @include headingStyle($font-size-lg);
+
+    @include headingStyle($font-size-sm);
 }
 
 .footer h3{
-    color: $color-secondary;
-    font-size: $font-size-sm;
-    text-align: center;
+    // @include headingStyle;
+    // font-size: $font-size-md;
+
+    // @include headingStyle(50px);
+    // @include headingStyle($font-size-md);
+
+    @include headingStyle();
+
+    &:hover{
+        color: $color-primary;
+        background-color: $color-secondary;
+        @include transition(color 2s, background-color 4s)
+    }
 }

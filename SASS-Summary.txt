@@ -71,4 +71,61 @@ Variables are Global or Local
 --------------------------------------------------------------------------------------------
 Part 4
 
+Nesting and Mixin
 
+
+1- Nesting
+    .nav{
+        ul li{}   
+            
+        a{ 
+            &:hover{} //a:hover
+        }
+    }
+
+2- Mixin  (is a method)
+    Create Mixin:
+        1:
+        @mixin nameMixin {
+            //style
+        }
+
+        2: a parameter 
+        @mixin nameMixin ($nameParameter) {
+            //style
+            font-size: $nameParameter;
+        }
+
+        3: a parameter with parameterValue or Variable
+        @mixin nameMixin ($parameter:parameterValue or Variable) {                  
+            //style
+            font-size: $parameter;
+        }
+
+        4: more parameters
+        @mixin nameMixin($params...) {
+            transition: $params;
+        }
+
+    Use Mixin:
+        @include nameMixin(parameter);
+
+
+
+Example:
+    //Create 
+    @mixin transition ($params...){
+        transition: $params;
+    }
+
+    //Use
+    &:hover{
+        color: $color-primary;
+        background-color: $color-secondary;
+
+        @include transition(color 2s, background-color 4s)
+    }
+
+
+--------------------------------------------------------------------------------------------
+Part 5
