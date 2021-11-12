@@ -1,83 +1,86 @@
 $color-primary: aqua;
 $color-secondary: gray;
-$color-tertiary: rgb(0, 26, 255);
+$color-tertiary: red;
 
 $font-size-lg: 40px;
 $font-size-md: 30px;
 $font-size-sm: 20px;
 
-// @mixin headingStyle {
-//     color: $color-secondary;
-//     text-align: center;
+// @function doubleFontSize ($fontSize){
+//     @return $fontSize * 2;
 // }
-
-// @mixin headingStyle ($font-size) {
-//     color: $color-secondary;
-//     text-align: center;
-//     font-size: $font-size;
-// }
-
-// @mixin headingStyle ($font-size:50px) {
-@mixin headingStyle ($font-size:$font-size-lg) {
-    color: $color-secondary;
-    text-align: center;
-    font-size: $font-size;
-}
-
-
-@mixin transition ($params...){
-    transition: $params;
+@function doubleFontSize ($fontSize:10px){
+    @return $fontSize * 2;
 }
 
 
 
-
-body{
+body {
     direction: rtl;
 }
 
-.nav{
-    background-color: $color-primary;
+.nav {
+    // background-color: $color-primary;
 
-    ul li{
+    // background-color: lighten($color: $color-primary, $amount: 30%);
+    // background-color: lighten($color-primary,30%);
+
+    // background-color: darken($color: $color-primary, $amount: 40%);
+    // background-color: darken($color-primary, 40%);
+
+    // background-color: transparentize($color: $color-primary, $amount: 0.6);
+    // background-color: transparentize($color-primary, 0.6);
+
+    // background-color: mix($color-primary,$color-tertiary, 80%);
+
+    ul li {
         list-style: none;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: $color-secondary;
         font-size: $font-size-sm;
 
-        &:hover{
+        &:hover {
             color: $color-tertiary;
             font-size: $font-size-md;
         }
     }
 }
 
+// .heading {
+//     color: $color-secondary;
+//     text-align: center;
+//     font-size: $font-size-lg;
+// }
 
-.banner h1{
-    // @include headingStyle;
-    // font-size: $font-size-lg;
-
-    // @include headingStyle(100px);
-    // @include headingStyle($font-size-lg);
-
-    @include headingStyle($font-size-sm);
+// Create Placeholder selector 
+%heading {
+    color: $color-secondary;
+    text-align: center;
+    font-size: $font-size-lg;
 }
 
-.footer h3{
-    // @include headingStyle;
-    // font-size: $font-size-md;
 
-    // @include headingStyle(50px);
-    // @include headingStyle($font-size-md);
+h1 {
+    // @extend .heading;
 
-    @include headingStyle();
+    // Use Placeholder selector 
+    @extend %heading;
 
     &:hover{
-        color: $color-primary;
-        background-color: $color-secondary;
-        @include transition(color 2s, background-color 4s)
+        background-color: red
     }
+}
+
+.footer h3 {
+    @extend h1;
+}
+
+.banner p{
+    // font-size: doubleFontSize(30px);
+    // font-size: doubleFontSize($font-size-sm);
+
+    font-size: doubleFontSize();
 }

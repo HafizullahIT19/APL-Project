@@ -1,6 +1,6 @@
 SASS Summary 
 
-SASS Help: 
+SASS Help: https://sass-lang.com/
 
 --------------------------------------------------------------------------------------------
 Part 1 
@@ -129,3 +129,82 @@ Example:
 
 --------------------------------------------------------------------------------------------
 Part 5
+
+1- Extend 
+2- Function 
+3- Sass Methods (Functions) 
+4- Placeholder selector 
+
+
+1- Extend: 
+    Use for takes style other Tag or class.
+    Use EXtend:
+        @extend nameTag or ClassName;
+
+    Example:
+        .footer h3{
+            @extend h1;             // H3 in footer takes H1 styles 
+        }
+
+
+2-Function:
+    Create Function:
+        1- @function nameFunction($parameter){
+            @return $parameter ....;
+        }
+
+        2- @function nameFunction($parameter:parameterValue){
+            @return $parameter ....;
+        }
+
+    Use Function:
+        1- nameFunction(parameter);
+        2- nameFunction();              // parameterValue is default
+
+
+    Example:
+        //Create Function
+            @function doubleFontSize1($font-size){
+                @return $font-size * 2;
+            }
+            @function doubleFontSize2($font-size:10px){
+                @return $font-size * 2;
+            }
+
+        //Use Function
+            .banner p{
+                font-size: doubleFontSize1(10px);
+                font-size: doubleFontSize2();
+            }
+
+
+3- Sass have mony methods and vi can use their.
+    Sass method:
+        1- lighten():
+            lighten($color: #000000, $amount: 0)
+
+        2- darken():
+            darken($color: #000000, $amount: 0)
+
+        3- transparentize():
+            transparentize($color: #000000, $amount: 0)
+
+        3- mix():
+            mix($color: #000000, $color: #000000, $weight: 0.5);
+
+
+
+4- Placeholder selector:
+    If you don't want, a class with style Export to Css Files
+    Create:
+        %nameClass{
+            //style
+        }
+
+    Use:
+      @extend %nameClass;
+
+    
+
+--------------------------------------------------------------------------------------------
+Part 6

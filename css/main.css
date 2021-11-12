@@ -2,10 +2,6 @@ body {
   direction: rtl;
 }
 
-.nav {
-  background-color: aqua;
-}
-
 .nav ul li {
   list-style: none;
 }
@@ -17,25 +13,21 @@ body {
 }
 
 .nav a:hover {
-  color: #001aff;
+  color: red;
   font-size: 30px;
 }
 
-.banner h1 {
-  color: gray;
-  text-align: center;
-  font-size: 20px;
-}
-
-.footer h3 {
+h1, .footer h3 {
   color: gray;
   text-align: center;
   font-size: 40px;
 }
 
-.footer h3:hover {
-  color: aqua;
-  background-color: gray;
-  transition: color 2s, background-color 4s;
+h1:hover, .footer h3:hover {
+  background-color: red;
+}
+
+.banner p {
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
