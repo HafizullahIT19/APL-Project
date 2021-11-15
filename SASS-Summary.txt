@@ -208,3 +208,108 @@ Part 5
 
 --------------------------------------------------------------------------------------------
 Part 6
+
+1- Partial Files
+2- Data Types in Sass
+3- Interpolation
+4- Loops(For and Each) 
+5- If Else
+
+
+
+1- Partial Files (is a module):
+    Create a partial file:
+        _partialFileName.scss 
+        Example: _test.scss 
+
+    Use a partial file:
+        @import "partialFileName";
+        Example: @import "test";
+
+
+2- Data Types in Sass:
+    1- numbers
+    2- string
+    3- colors
+    4- list
+
+    5- map:
+        Create map:
+            $mapName:(
+                keyName: value
+            )
+        use map:
+            map-get($map: MapName , $key: Key );
+
+        Example:
+            $colors: (
+                primary: red,
+                secondary: green,
+                tertiary: blue,
+            );
+
+            h1 {
+                color: map-get($map: $colors, $key: secondary)
+            }
+
+    6- boolean 
+    7- null  //has no value
+
+
+3- Interpolation:
+    Create Interpolation:
+        $interpolationName : "interpolationValue"
+
+    Use Interpolation:
+        #{$interpolationName}
+
+        Example:
+            $b : "border";
+            // box-sizing: border-box;
+            box-sizing: #{$b}-box;
+
+
+4- Loops:
+    1- For Loop:
+        1- @for $var from start to end {}   
+            Example: @for $i from 1 to 5 {}            // 1 2 3 4 
+
+        2- @for $var from start through end {}
+            Example: @for $i from 1 through 5 {}        // 1 2 3 4 5
+    
+
+    2- Each Loop:
+        @each $var in list {}
+
+        Example:
+            // list for Each Loop
+            $eachColors : red green blue gray yellow;
+
+            // Each Loop
+            @each $color in $eachColors {
+                .paragraph-#{$color}{
+                    background-color: $color;
+                }
+            }
+    
+
+5- if and Else:
+    @if(){}
+    @else if[(){}]
+    @else{}
+
+
+    Example:
+        $eachColors : red green blue gray yellow;
+
+        @each $color in $eachColors {
+            .paragraph-#{$color}{
+                @if ($color == green) {           //if
+                    background-color: pink;
+                }@else if($color == yellow){       //else if
+                    background-color: orange;
+                }@else{                            //else
+                    background-color: $color;
+                }
+            }
+        }

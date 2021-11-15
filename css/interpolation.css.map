@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,EAAE,CAAC;EAKC,UAAU,EAAC,UAAC;EACZ,MAAK,EAAE,aAAa;EACpB,gBAAgB,EAAa,IAAI;CACpC",
+    "sources": [
+        "../scss/interpolation.scss"
+    ],
+    "names": [],
+    "file": "interpolation.css"
+}
