@@ -1,3 +1,5 @@
+
+//Header
 .header {
     width: 100%;
     height: 100vh;
@@ -5,6 +7,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
         url(../images/bg.jpeg) center no-repeat;
     background-size: cover;
+    margin-bottom: 100px;
 
     .brand {
         @include centering(15%);
@@ -12,9 +15,65 @@
         align-items: center;
     }
 
-    &-banner{
+    &-banner {
         @include centering(60%);
         text-align: center;
         color: $color-white;
+    }
+}
+
+//About-us
+.about-us {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+    &-left {
+        width: 40%;
+
+        img {
+            width: 100%;
+            opacity: 0.7;
+        }
+    }
+
+    &-right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 80px;
+        box-sizing: border-box;
+
+        .main-heading {
+            font-size: 60px;
+        }
+
+        .sub-heading {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            margin: 30px 0;
+        }
+
+        .star {
+            font-size: 15px;
+            color: $color-primary;
+            margin-left: 10px;
+        }
+
+        .description {
+            font-family: $font-nastaliq;
+            font-size: 25px;
+            color: $color-secondary;
+            direction: rtl;
+            text-align: justify;
+
+            &::first-letter {
+                padding-right: 30px;
+            }
+        }
     }
 }
