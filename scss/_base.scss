@@ -6,12 +6,28 @@ $color-white: white;
 $color-secondary: #bbb;
 
 //Fonts Family
-$font-dancingScript: "Dancing Script", cursive;
-$font-josefinSans: "Josefin Sans", sans-serif;
-$font-nunito: "Nunito", sans-serif;
+$font-dancingScript: 'Dancing Script', cursive;
+$font-josefinSans: 'Josefin Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+$font-sahel: Sahel, Tahoma;
+$font-nastaliq: Nastaliq, Tahoma;
+
+@font-face {
+    font-family: Sahel;
+    src: url('../fonts/Sahel.eot');
+    src: url('../fonts/Sahel.ttf') format('ttf'),
+        url('../fonts/Sahel.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Nastaliq;
+    src: url('../fonts/IranNastaliq.ttf');
+    font-weight: normal;
+}
 
 //mixin
-@mixin perfect-centering{
+@mixin perfect-centering {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,14 +47,13 @@ $font-nunito: "Nunito", sans-serif;
 }
 
 // All Tags
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 // Body
-body{
+body {
     background-color: $color-dark;
 }
-
