@@ -7,7 +7,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
         url(../images/bg.jpeg) center no-repeat;
     background-size: cover;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
 
     .brand {
         @include centering(15%);
@@ -27,6 +27,8 @@
     height: 90vh;
     display: flex;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
 
     &-left {
         width: 40%;
@@ -75,5 +77,13 @@
                 padding-right: 30px;
             }
         }
+    }
+}
+
+//Gallery
+.gallery {
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
