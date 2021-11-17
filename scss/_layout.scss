@@ -33,6 +33,10 @@
                 top: 55%;
                 left: 35%;
             }
+
+            @media (max-width: 767px){
+                display: none;
+            }
         }
 
         &-right {
@@ -44,6 +48,11 @@
             position: fixed;
             right: -50vw;
             transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+
+            @media (max-width: 767px){
+                width: 100vw;
+                right: -100vw;
+            }
         }
 
         .nav-list {
@@ -65,6 +74,13 @@
                 &:hover {
                     color: $color-primary;
                     letter-spacing: 4px;
+                }
+
+                @media (max-width: 768px){
+                    font-size: 30px;
+                }
+                @media (max-width: 500px){
+                    font-size: 20px;
                 }
             }
         }
@@ -98,6 +114,13 @@
                     border: 3px solid $color-primary;
                     border-radius: 10px;
                     padding: 3px;
+                }
+
+                @media (max-width: 768px){
+                    font-size: 12px;
+                }
+                @media (max-width: 500px){
+                    font-size: 10px;
                 }
             }
         }
@@ -147,12 +170,20 @@
         @include centering(15%);
         display: flex;
         align-items: center;
+
+        @media (max-width: 500px){
+            @include centering(12%);
+        }
     }
 
     &-banner {
         @include centering(60%);
         text-align: center;
         color: $color-white;
+
+        @media (max-width: 1300px){
+            @include centering(54%);
+        }
     }
 }
 
@@ -161,8 +192,20 @@
     height: 90vh;
     display: flex;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 150px;
+
+    @media (max-width: 1300px){
+        height: 80vh;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    @media (max-width: 1000px){
+        height: 65vh;
+    }
+    @media (max-width: 800px){
+        height: 60vh;
+    }
+
+
 
     &-left {
         width: 40%;
@@ -170,6 +213,10 @@
         img {
             width: 100%;
             opacity: 0.7;
+        }
+
+        @media (max-width: 800px){
+            display: none;
         }
     }
 
@@ -181,23 +228,57 @@
         padding: 0 80px;
         box-sizing: border-box;
 
+        @media (max-width: 800px){
+            width: 100%;
+        }
+
         .main-heading {
-            font-size: 60px;
+            font-size: 70px;
+
+            @media (max-width: 1300px){
+                font-size: 60px;
+                margin-bottom: 10px;
+            }
+            @media (max-width: 1000px){
+                font-size: 50px;
+            }
+            @media (max-width: 375px){
+                font-size: 40px;
+            }
         }
 
         .sub-heading {
-            font-size: 40px;
+            font-size: 30px;
             margin-bottom: 20px;
+
+            @media (max-width: 1300px){
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            @media (max-width: 1000px){
+                font-size: 20px;
+            }
+            @media (max-width: 375px){
+                font-size: 16px;
+            }
         }
 
         .stars {
             margin: 30px 0;
+
+            @media (max-width: 1000px){
+                margin: 15px 0;
+            }
         }
 
         .star {
             font-size: 15px;
             color: $color-primary;
             margin-left: 10px;
+
+            @media (max-width: 1000px){
+                font-size: 10px;
+            }
         }
 
         .description {
@@ -209,6 +290,16 @@
 
             &::first-letter {
                 padding-right: 30px;
+            }
+
+            @media (max-width: 1300px){
+                font-size: 20px;
+            }
+            @media (max-width: 1000px){
+                font-size: 17px;
+            }
+            @media (max-width: 375px){
+                font-size: 13px;
             }
         }
     }
@@ -240,6 +331,10 @@
         justify-content: space-between;
         margin-bottom: 70px;
 
+        @media (max-width: 375px){
+            width: 200px;
+        }
+
         &-item {
             list-style: none;
         }
@@ -253,6 +348,16 @@
             &:hover {
                 color: $color-primary;
             }
+
+            @media (max-width: 1300px){
+                font-size: 40px;
+            }
+            @media (max-width: 600px){
+                font-size: 30px;
+            }
+            @media (max-width: 375px){
+                font-size: 20px;
+            }
         }
     }
 
@@ -261,5 +366,15 @@
         font-size: 20px;
         color: $color-secondary;
         direction: rtl;
+
+        @media (max-width: 1300px){
+            font-size: 16px;
+        }
+        @media (max-width: 600px){
+            font-size: 14px;
+        }
+        @media (max-width: 375px){
+            font-size: 10px;
+        }
     }
 }
