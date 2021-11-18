@@ -4,18 +4,28 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="shortcut icon" href="images/coding.png" />
         <title>Hafiz is Coding</title>
     </head>
     <body onload="">
-        
         <!-- start navbar section -->
-        <nav class="navbar " >
-            <input type="checkbox" id="check" class="checkbox" hidden>
+        <nav class="navbar">
+            <input type="checkbox" id="check" class="checkbox" hidden />
             <div class="hamburger-menu">
                 <label for="check" class="menu">
                     <div class="menu-line menu-line-1"></div>
@@ -25,37 +35,65 @@
             </div>
             <div class="navbar-navigation">
                 <div class="navbar-navigation-left">
-                    <img src="images/nav-img-1.jpeg" class="left-img left-img-1">
-                    <img src="images/nav-img-2.jpeg" class="left-img left-img-2">
-                    <img src="images/nav-img-3.jpeg" class="left-img left-img-3">
+                    <img
+                        src="images/nav-img-1.jpeg"
+                        class="left-img left-img-1"
+                    />
+                    <img
+                        src="images/nav-img-2.jpeg"
+                        class="left-img left-img-2"
+                    />
+                    <img
+                        src="images/nav-img-3.jpeg"
+                        class="left-img left-img-3"
+                    />
                 </div>
                 <div class="navbar-navigation-right">
                     <ul class="nav-list">
                         <li class="nav-list-item">
-                            <a href="#" class="nav-list-link">خانه</a>
+                            <a
+                                id="home"
+                                href="#"
+                                class="nav-list-link active-item"
+                                >خانه</a
+                            >
                         </li>
                         <li class="nav-list-item">
-                            <a href="#" class="nav-list-link active-item">درباره ما</a>
+                            <a id="aboutUs" href="#" class="nav-list-link"
+                                >درباره ما</a
+                            >
                         </li>
                         <li class="nav-list-item">
-                            <a href="#" class="nav-list-link">گالری تصایر</a>
+                            <a id="gallery" href="#" class="nav-list-link"
+                                >گالری تصایر</a
+                            >
                         </li>
                         <li class="nav-list-item">
-                            <a href="#" class="nav-list-link">رزرو میز</a>
+                            <a id="reserve" href="#" class="nav-list-link"
+                                >رزرو میز</a
+                            >
                         </li>
                         <li class="nav-list-item">
-                            <a href="#" class="nav-list-link">سرویس ها</a>
+                            <a id="services" href="#" class="nav-list-link"
+                                >سرویس ها</a
+                            >
                         </li>
                         <li class="nav-list-item">
-                            <a href="#" class="nav-list-link">تماس با ما</a>
+                            <a id="contactUs" href="#" class="nav-list-link"
+                                >تماس با ما</a
+                            >
                         </li>
                     </ul>
                     <ul class="language-list">
                         <li class="language-list-item">
-                            <a href="#" class="language-list-link active-language">فارسی</a>
+                            <a id="fa" href="#fa" class="language-list-link"
+                                >فارسی</a
+                            >
                         </li>
                         <li class="language-list-item">
-                            <a href="#" class="language-list-link">سویدی</a>
+                            <a id="en" href="#en" class="language-list-link"
+                                >انگلیسی</a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -70,149 +108,175 @@
                     <i class="fa fa-utensils"></i>
                 </a>
                 <div>
-                    <h1 class="main-name">رستوران من</h1>
-                    <p class="sub-name">غذاهای لذیذ ما</p>
+                    <h1 id="hRestaurant" class="main-name">رستوران من</h1>
+                    <p id="hFoods" class="sub-name">غذاهای لذیذ ما</p>
                 </div>
             </div>
             <div class="header-banner">
-                <h1 class="main-heading">خوش آمدید</h1>
-                <h3 class="sub-heading">غذاهای ما را امتحان کنید</h3>
-                <button type="button" class="main-btn">رزور میز</button>
+                <h1 id="welcome" class="main-heading">خوش آمدید</h1>
+                <h3 id="foodTest" class="sub-heading">
+                    غذاهای ما را امتحان کنید
+                </h3>
+                <button id="reserveTable" type="button" class="main-btn">
+                    رزور میز
+                </button>
             </div>
         </header>
         <!-- end site header  -->
 
         <!-- start about us section -->
-    <section class="about-us">
-        <div class="about-us-left">
-            <img src="images/about-us-img.png" alt="درباره ما">
-        </div>
-        <div class="about-us-right">
-            <h1 class="main-heading">درباره ی رستوران</h1>
-            <h3 class="sub-heading">درباره دستپخت محمد اردوخانی</h3>
-            <div class="stars">
-                <i class="fa fa-star-of-life star"></i>
-                <i class="fa fa-star-of-life star"></i>
-                <i class="fa fa-star-of-life star"></i>
+        <section class="about-us">
+            <div class="about-us-left">
+                <img src="images/about-us-img.png" alt="درباره ما" />
             </div>
-            <p class="description">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
-                شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
-                الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و
-                دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
-                اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-            </p>
-            <div class="stars">
-                <i class="fa fa-star-of-life star"></i>
-                <i class="fa fa-star-of-life star"></i>
-                <i class="fa fa-star-of-life star"></i>
+            <div class="about-us-right">
+                <h1 id="aboutRestaurant" class="main-heading">
+                    درباره ی رستوران
+                </h1>
+                <h3 id="aboutCooking" class="sub-heading">
+                    درباره دستپخت محمد اردوخانی
+                </h3>
+                <div class="stars">
+                    <i class="fa fa-star-of-life star"></i>
+                    <i class="fa fa-star-of-life star"></i>
+                    <i class="fa fa-star-of-life star"></i>
+                </div>
+                <p id="description" class="description">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                    طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                    صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
+                    حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای
+                    موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star-of-life star"></i>
+                    <i class="fa fa-star-of-life star"></i>
+                    <i class="fa fa-star-of-life star"></i>
+                </div>
+                <button id="moreInf" type="button" class="main-btn">
+                    اطلاعات بیشتر
+                </button>
             </div>
-            <button type="button" class="main-btn">اطلاعات بیشتر</button>
-        </div>
-    </section>
-    <!-- end about us section -->
+        </section>
+        <!-- end about us section -->
 
         <!-- start gallery section -->
         <section class="gallery">
             <div class="cards-wrapper">
-                
                 <div class="card">
                     <div class="card-overlay">
-                        <h1 class="card-overlay-heading">نام غذا</h1>
-                        <p class="card-overlay-paragraph">قیمت : 500 تومان</p>
-                        <button type="button" class="card-overlay-btn">سفارش</button>
+                        <h1 id="foodName1" class="card-overlay-heading">نام غذا</h1>
+                        <p id="foodPrice1"class="card-overlay-paragraph">قیمت : 500 تومان</p>
+                        <button id="foodOrder1" type="button" class="card-overlay-btn">
+                            سفارش
+                        </button>
                     </div>
-                    <img src="images/gallery-img-1.jpeg" class="card-img">
+                    <img src="images/gallery-img-1.jpeg" class="card-img" />
                 </div>
                 <div class="card">
                     <div class="card-overlay">
                         <h1 class="card-overlay-heading">نام غذا</h1>
                         <p class="card-overlay-paragraph">قیمت : 500 تومان</p>
-                        <button type="button" class="card-overlay-btn">سفارش</button>
+                        <button type="button" class="card-overlay-btn">
+                            سفارش
+                        </button>
                     </div>
-                    <img src="images/gallery-img-2.jpeg" class="card-img">
+                    <img src="images/gallery-img-2.jpeg" class="card-img" />
                 </div>
                 <div class="card">
                     <div class="card-overlay">
                         <h1 class="card-overlay-heading">نام غذا</h1>
                         <p class="card-overlay-paragraph">قیمت : 500 تومان</p>
-                        <button type="button" class="card-overlay-btn">سفارش</button>
+                        <button type="button" class="card-overlay-btn">
+                            سفارش
+                        </button>
                     </div>
-                    <img src="images/gallery-img-3.jpeg" class="card-img">
+                    <img src="images/gallery-img-3.jpeg" class="card-img" />
                 </div>
                 <div class="card">
                     <div class="card-overlay">
                         <h1 class="card-overlay-heading">نام غذا</h1>
                         <p class="card-overlay-paragraph">قیمت : 500 تومان</p>
-                        <button type="button" class="card-overlay-btn">سفارش</button>
+                        <button type="button" class="card-overlay-btn">
+                            سفارش
+                        </button>
                     </div>
-                    <img src="images/gallery-img-4.jpeg" class="card-img">
+                    <img src="images/gallery-img-4.jpeg" class="card-img" />
                 </div>
                 <div class="card">
                     <div class="card-overlay">
                         <h1 class="card-overlay-heading">نام غذا</h1>
                         <p class="card-overlay-paragraph">قیمت : 500 تومان</p>
-                        <button type="button" class="card-overlay-btn">سفارش</button>
+                        <button type="button" class="card-overlay-btn">
+                            سفارش
+                        </button>
                     </div>
-                    <img src="images/gallery-img-5.jpeg" class="card-img">
+                    <img src="images/gallery-img-5.jpeg" class="card-img" />
                 </div>
                 <div class="card">
                     <div class="card-overlay">
                         <h1 class="card-overlay-heading">نام غذا</h1>
                         <p class="card-overlay-paragraph">قیمت : 500 تومان</p>
-                        <button type="button" class="card-overlay-btn">سفارش</button>
+                        <button type="button" class="card-overlay-btn">
+                            سفارش
+                        </button>
                     </div>
-                    <img src="images/gallery-img-6.jpeg" class="card-img">
+                    <img src="images/gallery-img-6.jpeg" class="card-img" />
                 </div>
-
             </div>
         </section>
         <!-- end gallery section -->
 
-            <!-- start footer section -->
-    <footer class="footer">
-        <div class="footer-header">
-            <a href="#" class="logo">
-                <i class="fa fa-utensils"></i>
-            </a>
-            <div>
-                <h1 class="main-name">رستوران من</h1>
-                <p class="sub-name">غذاهای لذیذ ما</p>
+        <!-- start footer section -->
+        <footer class="footer">
+            <div class="footer-header">
+                <a href="#" class="logo">
+                    <i class="fa fa-utensils"></i>
+                </a>
+                <div>
+                    <h1 id="fRestaurant" class="main-name restaurant">رستوران من</h1>
+                    <p id="fFoods" class="sub-name foods">غذاهای لذیذ ما</p>
+                </div>
             </div>
-        </div>
-        <div class="footer-social-media">
-            <ul class="social-media">
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                </li>
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-google-plus-square"></i>
-                    </a>
-                </li>
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-copyright">
-            <p class="footer-copyright-paragraph">
-                &copy; کپی رایت. تمام حقوق این سایت متعلق به مجموعه ی تاپ لرن میباشد
-            </p>
-        </div>
-    </footer>
-    <!-- end footer section -->
+            <div class="footer-social-media">
+                <ul class="social-media">
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-google-plus-square"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p id="copyright" class="footer-copyright-paragraph">
+                    &copy; کپی رایت. تمام حقوق این سایت متعلق به مجموعه ی تاپ
+                    لرن میباشد
+                </p>
+            </div>
+        </footer>
+        <!-- end footer section -->
 
         <script src="js/main.js"></script>
     </body>

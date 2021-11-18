@@ -189,7 +189,7 @@
 
 //About-us
 .about-us {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 
@@ -221,6 +221,7 @@
     }
 
     &-right {
+        margin-top: 60px;
         width: 60%;
         display: flex;
         flex-direction: column;
@@ -233,7 +234,7 @@
         }
 
         .main-heading {
-            font-size: 70px;
+            font-size: 65px;
 
             @media (max-width: 1300px){
                 font-size: 60px;
@@ -249,7 +250,7 @@
 
         .sub-heading {
             font-size: 30px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             @media (max-width: 1300px){
                 font-size: 25px;
@@ -283,9 +284,9 @@
 
         .description {
             font-family: $font-nastaliq;
-            font-size: 25px;
+            font-size: 20px;
             color: $color-secondary;
-            direction: rtl;
+            // direction: rtl;
             text-align: justify;
 
             &::first-letter {
